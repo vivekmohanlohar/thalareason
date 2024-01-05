@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thala for a Reason Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="app-container">
+      <h1>Thala for a Reason Game</h1>
+      <textarea rows="4" id="wordInput" placeholder="Enter a word"></textarea>
+      <button onclick="checkThalaCondition()">Check</button>
+
+      <div id="thalaContent" class="thala-content hidden">
+        <div id="combinedPopup" class="popup hidden">
+          <button class="close-button" onclick="closePopup('combinedPopup')"><i class="fas fa-times"></i></button>
+
+          <div class="popup-content">
+            <video id="thalaVideo" loop>
+              <source src="thala_video.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="popup-content">
+            <p id="thalaMessage">Thala for a Reason <span class="emoji">&#128521;</span></p>
+          </div>
+        </div>
+        <div id="popupMessage" class="hidden"></div>
+        <p id="noThalaMessage" class="hidden">No Thala for a Reason</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Developer - Get In Touch -->
+  <footer>
+    Designed and Developed By <br>
+    Vivek Lohar <br><br>
+    <ul class="social_media">
+      <a href="https://vivekmohanlohar.github.io/viveklohar/" data-aos="fade-up" data-aos-offset="0" data-aos-delay="5000"><i class="fa-solid fa-globe"></i></a> &nbsp;
+      <a href="https://github.com/vivekmohanlohar" data-aos="fade-" data-aos-offset="0" data-aos-delay="5000"><i class="fa-brands fa-github"></i></a>&nbsp;
+      <a href="https://in.linkedin.com/in/vivekmohanlohar" data-aos="fade-up" data-aos-offset="0" data-aos-delay="5000"><i class="fa-brands fa-linkedin-in"></i></a>&nbsp;
+      <a href="https://www.instagram.com/vivekmohanlohar/" data-aos="fade-up" data-aos-offset="0" data-aos-delay="5000"><i class="fa-brands fa-instagram"></i></a>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
